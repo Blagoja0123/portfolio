@@ -74,17 +74,16 @@ export const EarthCanvas = () =>{
         <div className='w-full h-full absolute inset-0'>
             <Canvas camera={{ position: [0, 0, 10] }}>
                 <Suspense>
-                    {/* <DarkShadesphere/>
-                    <Shadesphere/>
-                    <Atmosphere/> */}
-                    {/* <CircleAbs color={0x87D4E4} size={[6.5, 25]} opacity={0.5}/> */}
-                    {/* <CircleAbs color={[0x87D4E4, 0x000000]} size={[6.75, 25]} opacity={0.4}/> */}
-                    <Atmosphere/>
+                    <ambientLight intensity={100}/>
+                    <CircleAbs color={0x2F47BF} size={[4.0, 25]} opacity={1}/>
+                    <CircleAbs color={0x04007D} size={[4.1, 25]} opacity={0.6}/>
+                    <CircleAbs color={0x4F79C3} size={[4.2, 25]} opacity={0.6}/>
+                    <CircleAbs color={0x87D4E4} size={[4.35, 25]} opacity={0.3}/>
+                    <CircleAbs color={0x000000} size={[4.45, 25]} opacity={0.4}/>
                     <Earth/>
                 </Suspense>
                 <Preload all/>
             </Canvas>
-            {/* <img src={atmo} alt="" /> */}
         </div>
     )
 }

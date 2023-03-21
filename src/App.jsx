@@ -9,7 +9,7 @@ function App() {
       <div className="h-full w-full">
         <Nav/>
         <StarsCanvas />
-        {/* <EarthCanvas/> */}
+        <EarthCanvas/>
       </div>
       {/* <div className="text-red-900">Hello</div> */}
 
