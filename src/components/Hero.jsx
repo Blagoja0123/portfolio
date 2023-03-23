@@ -2,7 +2,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <section className='relative w-full h-screen mx-auto'>
+        Hi, I'm Blagoja
+        student, maths and programming competitior, aspiring software engineer
+    </section>
   )
 }
 
