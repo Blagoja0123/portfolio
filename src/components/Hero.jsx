@@ -1,11 +1,41 @@
-import React from 'react'
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas/Earth"
+import {motion} from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto'>
-        Hi, I'm Blagoja
-        student, maths and programming competitior, aspiring software engineer
-    </section>
+    <>
+      <section className="relative w-full mx-auto h-screen">
+          <div className={`flex flex-wrap absolute inset-0 top-[50px] w- mx-24 ${styles.paddingX} justify-center items-start h-full`}>
+              <div className="flex flex-row gap-3 lg:h-56 sm:w-screen p-4">
+                <div className="flex flex-col justify-center items-center mt-5 ">
+                    <div className="lg:w-5 lg:h-10 w-5 h-5 rounded-full bg-sky-400"/>
+                    <div className="w-1 sm:h-80 h-[40px] blue-gradient"/>
+                </div>
+                <div>
+                  <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className=" text-[#37c3ff]">Blagoja</span></h1>
+                  <p className={`${styles.heroSubText} mt-2 text-white-100`}>I compete in international competitions and aspire to be a software engineer</p>
+                </div>
+              </div>
+              <div className="w-[31rem] h-[31rem]">
+                <EarthCanvas/>
+              </div>
+          </div>
+          <div className="absolute xs:bottom-10 bottom 32 w-full flex justify-center items-center">
+            <a href="#about">
+              <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+                <motion.div 
+                animate={{y:[0, 24, 0],}}
+                transition={{
+                  duration: 1.5,
+                  repeat: Infinity,
+                  repeatType: "loop",
+                }} className='w-3 h-3 rounded-full bg-secondary mb-1'/>
+              </div>
+            </a>
+          </div>
+      </section>
+    </>
   )
 }
 

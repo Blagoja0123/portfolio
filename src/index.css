@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +25,28 @@
 
 
 
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.border-gradient-animation {
+  z-index: -1;
+  background: linear-gradient(to right, #55BEEB, #0033FF);
+  background-size: 200% 200%;
+  animation: gradient 3s ease-in-out infinite;
+  box-shadow: 0 0 8px #55BEEB, 0 0 16px #55BEEB, 0 0 24px #55BEEB, 0 0 32px #0033FF, 0 0 40px #0033FF, 0 0 48px #0033FF, 0 0 64px #0033FF;
+}
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -35,13 +61,13 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.blue-gradient {
+  background: rgb(56, 189, 248);
+  background: linear-gradient(-90deg, rgb(56, 189, 248) 0%, rgba(1, 53, 105, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
+    rgb(56, 189, 248) 0%,
+    rgba(1, 53, 105, 0) 100%
   );
 }
 
