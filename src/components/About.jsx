@@ -7,7 +7,7 @@ import { services } from '../utils/constants';
 import StarWrapper from '../hoc/StarWrapper';
 
 
-const Card = ({index, title, icon}) =>{
+const Card = ({index, title, icon}) =>(
     <Tilt className='xs:w-[250px] w-full'>
         <motion.div
         variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -24,7 +24,7 @@ const Card = ({index, title, icon}) =>{
             <img
                 src={icon}
                 alt='web-development'
-                className='w-16 h-16 object-contain'
+                className='w-16 h-16 object-contain fill-white text-white stroke-white '
             />
             <h3 className='text-white text-[20px] font-bold text-center'>
                 {title}
@@ -32,7 +32,7 @@ const Card = ({index, title, icon}) =>{
             </div>
         </motion.div>
     </Tilt>
-}
+)
 
 const About = () => {
   return (

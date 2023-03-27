@@ -20,6 +20,11 @@ import group from '../assets/group.svg';
 import award from '../assets/award.svg';
 import math from '../assets/math.svg';
 import code from '../assets/code.svg';
+import codesymbol from '../assets/codesymbol.svg';
+import admin from '../assets/admin.svg';
+import brain from '../assets/brain.svg';
+import medal from '../assets/medal.svg';
+import teamwork from '../assets/teamwork.svg';
 
 const technologies = [
     {
@@ -86,20 +91,44 @@ const technologies = [
 
 export const services = [
     {
-        title: "Teamwork",
+        title: "Team player",
         icon: group, 
     },
     {
-        title: "Programming",
+        title: "Full stack",
         icon: code, 
     },
     {
-        title: "Competition",
+        title: "Persistent",
         icon: math, 
     },
     {
-        title: "Awards",
+        title: "Awarded competitor",
         icon: award, 
+    },
+]
+
+export const experience = [
+    {
+        title: "Competitions",
+        icon: medal,
+        
+    },
+    {
+        title: "International Projects",
+        icon: teamwork,
+    },
+    {
+        title: "Internship",
+        icon: codesymbol
+    },
+    {
+        title: "School Website Admin",
+        icon: admin
+    },
+    {
+        title: "Personal Projects & Interests",
+        icon: brain
     },
 ]
 
