@@ -1,4 +1,5 @@
 import About from "./components/About"
+import Experience from "./components/Experience"
 import Hero from "./components/Hero"
 import Nav from "./components/Nav"
 import Tech from "./components/Tech"
@@ -17,6 +18,7 @@ function App() {
             <Hero />
           </div>
           <About/>
+          <Experience/>
       </div>
         {/* <Tech/> */}
         {/* <EarthCanvas/> */}

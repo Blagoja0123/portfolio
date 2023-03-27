@@ -112,23 +112,49 @@ export const experience = [
     {
         title: "Competitions",
         icon: medal,
-        
+        points: [
+            "Math competitions",
+            "English competitions",
+            "Programming competitions",
+            "13 participations in international math competitions with achieved awards",
+        ]
     },
     {
         title: "International Projects",
         icon: teamwork,
+        points: [
+            "Erasmus+ projects",
+            "Teamwork skills",
+            "Leadership skills",
+            "Communication skills",
+        ]
     },
     {
         title: "Internship",
-        icon: codesymbol
+        icon: codesymbol,
+        points: [
+            "Work on a real application in a team with others",
+            "Guidance from professionals in the field of web development",
+            "Experience with modern technologies",
+            "Evolving problem solving skills in the realm of web development",
+        ]
     },
     {
         title: "School Website Admin",
-        icon: admin
+        icon: admin,
+        points: [
+            "Administrator of the school website",
+        ]
     },
     {
         title: "Personal Projects & Interests",
-        icon: brain
+        icon: brain,
+        points: [
+            "C# API development",
+            "Machine learning with python and tensorflow",
+            "Blog app using modern technologies",
+            "Desktop app development with electron.js",
+        ]
     },
 ]
 
