@@ -16,6 +16,10 @@ import trpc from '../assets/trpc.svg';
 import ts from '../assets/ts.png';
 import react from '../assets/react.png';
 import css from '../assets/css.png';
+import group from '../assets/group.svg';
+import award from '../assets/award.svg';
+import math from '../assets/math.svg';
+import code from '../assets/code.svg';
 
 const technologies = [
     {
@@ -79,5 +83,24 @@ const technologies = [
         icon: react,
     },
 ];
+
+export const services = [
+    {
+        title: "Teamwork",
+        icon: group, 
+    },
+    {
+        title: "Programming",
+        icon: code, 
+    },
+    {
+        title: "Competition",
+        icon: math, 
+    },
+    {
+        title: "Awards",
+        icon: award, 
+    },
+]
 
 export default technologies;
