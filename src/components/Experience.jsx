@@ -15,6 +15,7 @@ const ExpCard = ({experience}) =>{
                 color: "#fff",
             }}
             contentArrowStyle={{borderRight: "7px solid #232631"}}
+            iconStyle={{ background: '#000000' }}
             icon={
                 <div className='flex justify-center items-center w-full h-full'>
                     <img
