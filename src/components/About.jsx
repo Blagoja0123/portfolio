@@ -4,6 +4,7 @@ import {motion} from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { styles } from '../styles';
 import { services } from '../utils/constants';
+import StarWrapper from '../hoc/StarWrapper';
 
 
 const Card = ({index, title, icon}) =>{
@@ -58,4 +59,4 @@ const About = () => {
   )
 }
 
-export default About
+export default StarWrapper(About, "about");
