@@ -36,6 +36,18 @@ const technologies = [
         icon: cpp,
     },
     {
+        name: "js",
+        icon: js,
+    },
+    {
+        name: "html",
+        icon: htmlpic,
+    },
+    {
+        name: "css",
+        icon: css,
+    },
+    {
         name: "git",
         icon: git,
     },
@@ -67,10 +79,10 @@ const technologies = [
         name: "tailwind",
         icon: tailwind,
     },
-    // {
-    //     name: "tf",
-    //     icon: tf,
-    // },
+    {
+        name: "tf",
+        icon: tf,
+    },
     {
         name: "trpc",
         icon: trpc,

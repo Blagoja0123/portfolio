@@ -19,6 +19,7 @@ function App() {
           </div>
           <About/>
           <Experience/>
+          <Tech/>
       </div>
         {/* <Tech/> */}
         {/* <EarthCanvas/> */}
