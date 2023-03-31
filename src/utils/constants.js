@@ -25,6 +25,11 @@ import admin from '../assets/admin.svg';
 import brain from '../assets/brain.svg';
 import medal from '../assets/medal.svg';
 import teamwork from '../assets/teamwork.svg';
+import stockmng from '../assets/stockmanagement.png';
+import blogapp from '../assets/blogapp.png';
+import authimg from '../assets/authimg.png';
+
+
 
 const technologies = [
     {
@@ -167,6 +172,90 @@ export const experience = [
             "Blog app using modern technologies",
             "Desktop app development with electron.js",
         ]
+    },
+]
+
+export const projects = [
+    {
+        name: "Stock Management System",
+        description: "A C# application using the ASP.NET web framework to make an API that allows a user to add, edit and delete products as well as a user system with password encryption and a cart system for placing orders.",
+        tags: [
+            {
+                name: "c#",
+            },
+            {
+                name: "asp.net",
+            },
+            {
+                name: "mysql",
+            },
+            {
+                name: "react",
+            },
+            {
+                name: "typescript",
+            },
+            {
+                name: "reactquery",
+            },
+            {
+                name: "scss",
+            },
+        ],
+        image: stockmng,
+        frontend: "https://github.com/Blagoja0123/Stock-Frontend-React",
+        backend: "https://github.com/Blagoja0123/StockManagement",
+    },
+    {
+        name: "Blog App",
+        description: "A full stack application using some of the most modern technologies. This app allows for people to register accounts and use them to post blogs and comment on others' blogs.",
+        tags: [
+            {
+                name: "nextjs",
+            },
+            {
+                name: "typescript",
+            },
+            {
+                name: "mysql",
+            },
+            {
+                name: "react",
+            },
+            {
+                name: "prisma",
+            },
+            {
+                name: "trpc",
+            },
+            {
+                name: "tailwind",
+            },
+        ],
+        image: blogapp,
+        frontend: "https://github.com/Blagoja0123/testNext",
+        backend: "https://github.com/Blagoja0123/testNext",
+    },
+    {
+        name: "Auth App",
+        description: "This application is made to explore the way in which databases store images without using 3rd party solutions such as AWS, Google Cloud, Firebase, etc.",
+        tags: [
+            {
+                name: "c#",
+            },
+            {
+                name: "asp.net",
+            },
+            {
+                name: "mysql",
+            },
+            {
+                name: "react",
+            },
+        ],
+        image: authimg,
+        frontend: "https://github.com/Blagoja0123/AuthBPFront",
+        backend: "https://github.com/Blagoja0123/AuthBPBackend",
     },
 ]
 
