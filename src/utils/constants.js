@@ -177,8 +177,8 @@ export const experience = [
 
 export const projects = [
     {
-        name: "Stock Management System",
-        description: "A C# application using the ASP.NET web framework to make an API that allows a user to add, edit and delete products as well as a user system with password encryption and a cart system for placing orders.",
+        name: "Stock Management",
+        description: "A C# application using the ASP.NET web framework to make an API that allows a users to list products and others to place orders using a persistent cart system.",
         tags: [
             {
                 name: "c#",
@@ -189,18 +189,6 @@ export const projects = [
             {
                 name: "mysql",
             },
-            {
-                name: "react",
-            },
-            {
-                name: "typescript",
-            },
-            {
-                name: "reactquery",
-            },
-            {
-                name: "scss",
-            },
         ],
         image: stockmng,
         frontend: "https://github.com/Blagoja0123/Stock-Frontend-React",
@@ -208,19 +196,13 @@ export const projects = [
     },
     {
         name: "Blog App",
-        description: "A full stack application using some of the most modern technologies. This app allows for people to register accounts and use them to post blogs and comment on others' blogs.",
+        description: "A full stack application using some modern technologies. This app allows for people to register accounts and use them to post blogs and comment on other blogs.",
         tags: [
             {
                 name: "nextjs",
             },
             {
-                name: "typescript",
-            },
-            {
                 name: "mysql",
-            },
-            {
-                name: "react",
             },
             {
                 name: "prisma",
@@ -238,7 +220,7 @@ export const projects = [
     },
     {
         name: "Auth App",
-        description: "This application is made to explore the way in which databases store images without using 3rd party solutions such as AWS, Google Cloud, Firebase, etc.",
+        description: "This application is made to explore the way in which databases store images without using 3rd party solutions such as: Firebase, AWS, Google Cloud, etc.",
         tags: [
             {
                 name: "c#",
