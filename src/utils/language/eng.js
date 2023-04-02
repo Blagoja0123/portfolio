@@ -29,12 +29,12 @@ let hero = {
 let about = {
     introduction: "introduction",
     overview: "Overview",
-    content: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+    content: "I am a student and aspiring software engineer with a track record of success in both competitions and professional settings. I have participated in 13 international competitions and won several awards, demonstrating my skills and abilities. In addition to my technical expertise, I have also gained valuable teamwork, leadership, and communication skills through my participation in international projects. I have completed an internship in software engineering and am currently the admin of my school’s website. My knowledge of a wide range of technologies makes me a versatile and capable problem-solver, and I am always eager to take on new challenges and prepare for the future.",
 }
 let work = {
     my_work: "my work",
     proj: "Projects.",
-    content: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+    content: "The following projects showcase a portion of my skills and experience through examples of my work. Each project is briefly described and has a link to it's respective repository. These reflect my abilities to solve problems, work with different technologies and manage the projects effectively."
 }
 let services = [
     {
