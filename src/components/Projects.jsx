@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { projects } from "../utils/constants.js";
 import { fadeIn, textVariant } from "../utils/motion";
 
-import github from '../assets/github.png';
+import github from '/assets/github.png';
 import StarWrapper from "../hoc/StarWrapper";
 
 

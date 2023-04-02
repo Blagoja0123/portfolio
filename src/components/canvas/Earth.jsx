@@ -1,8 +1,8 @@
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import * as THREE from 'three';
-import map from '../../assets/earthmap.jpg'
-import atmo from '../../assets/sphere.png'
-import normalTexture from '../../assets/normalmap.jpg';
+import map from '/assets/earthmap.jpg'
+import atmo from '/assets/sphere.png'
+import normalTexture from '/assets/normalmap.jpg';
 import { Suspense, useRef } from 'react';
 import { GradientTexture, Preload, OrbitControls} from '@react-three/drei';
 import CircleAbs from './CircleAbs';

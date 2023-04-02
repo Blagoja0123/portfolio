@@ -11,12 +11,12 @@ export const eng = [
     about = {
         introduction: "introduction",
         overview: "Overview",
-        content: "",
+        content: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
     },
     work = {
         my_work: "my work",
         proj: "Projects.",
-        content: ""
+        content: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
     },
     services = [
         {
