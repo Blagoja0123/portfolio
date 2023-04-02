@@ -6,6 +6,8 @@ import { experience } from "../utils/constants";
 import { textVariant } from "../utils/motion";
 
 import { styles } from "../styles";
+import { useContext } from "react";
+import { LanguageContext } from "../Context/LanguageContext";
 
 const ExpCard = ({experience}) =>{
     return(
@@ -44,16 +46,17 @@ const ExpCard = ({experience}) =>{
 }
 
 const Experience = () => {
+    const {language, changeLanguage} = useContext(LanguageContext);
   return (
     <>
         <motion.div variants={textVariant()}>
             <p className={`${styles.sectionSubText} text-center`}>
-            What I have done so far
+            {language[8].wid}
             </p>
         </motion.div>
         <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
-          {experience.map((item, index) => (
+          {language[6].map((item, index) => (
             <ExpCard
               key={`experience-${index}`}
               experience={item}

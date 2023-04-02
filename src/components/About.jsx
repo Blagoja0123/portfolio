@@ -5,6 +5,8 @@ import { fadeIn, textVariant } from '../utils/motion';
 import { styles } from '../styles';
 import { services } from '../utils/constants';
 import StarWrapper from '../hoc/StarWrapper';
+import { useContext } from 'react';
+import { LanguageContext } from '../Context/LanguageContext';
 
 
 const Card = ({index, title, icon}) =>(
@@ -35,23 +37,21 @@ const Card = ({index, title, icon}) =>(
 )
 
 const About = () => {
+    const {language, changeLanguage} = useContext(LanguageContext);
   return (
     <>
         <motion.div variants={textVariant()}>
-            <p className={styles.sectionSubText}>Introduction</p>
-            <h2 className={styles.sectionHeadText}>Overview</h2>
+            <p className={styles.sectionSubText}>{language[3].introduction}</p>
+            <h2 className={styles.sectionHeadText}>{language[3].overview}</h2>
         </motion.div>
         <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Quos cum sit ullam molestias quia doloribus velit, earum similique. 
-            Pariatur possimus, eum voluptatum dolor sequi in ex vero quos ipsam 
-            inventore.
+            {language[3].content}
         </motion.p>
         <div className='mt-20 flex flex-wrap gap-10'>
-            {services.map((service, index) =>(
+            {language[5].map((service, index) =>(
                 <Card key={service.title} index={index} {...service}/>
             ))}
         </div>

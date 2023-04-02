@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { languages } from '../utils/language/languages';
+import LanguageProvider, { LanguageContext } from '../Context/LanguageContext';
+import { useContext } from 'react';
 const Nav = () => {
 
     const[open, setOpen] = useState(false);
@@ -9,9 +12,12 @@ const Nav = () => {
         {name:"EXPERIENCE",link:"/"},
         {name:"CONTACT",link:"/"},
       ];
+
+    const {language, changeLanguage} = useContext(LanguageContext);
+    console.log(language);
   return (
     <div className="w-screen h-16 rounded-lg leading-none content-center flex items-center divide-x divide-gray-600">
-        <div className="w-full h-20 absolute -z-1 -inset-0.5 bg-gradient-to-r from-cyan-200 to-blue-900 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+        <div className="w-full h-20 absolute -z-1 -inset-0.5 bg-gradient-to-r from-cyan-200 to-blue-900 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"/>
         <div className='w-full flex z-10 relative items-center h-16 bg-black justify-between px-4'>
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Blagoja</span>
         
@@ -22,12 +28,23 @@ const Nav = () => {
 
             <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static bg-black md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${open ? 'top-20 ':'top-[-490px]'}`}>
                 {
-                Links.map((link)=>(
-                    <li key={link.name} className='md:ml-8 text-xl md:my-0 my-7'>
-                    <a href={link.link} className='text-white hover:text-gray-400 duration-500'>{link.name}</a>
+                language[1].map((link)=>(
+                    <li key={link} className='md:ml-8 text-xl md:my-0 my-7'>
+                    <a href="#" className='text-white hover:text-gray-400 duration-500'>{link}</a>
                     </li>
                 ))
                 }
+                <li className='md:ml-8 text-xl md:my-0 my-7'>
+                <select onChange={changeLanguage} className='bg-tertiary rounded-lg flex content-center items-center h-10 text-xl'>
+                    {
+                        languages.map((lang, index) =>(
+                            <option key={lang[0].name} value={index} className='text-xl'>
+                                {lang[0].name}
+                            </option>
+                        ))
+                    }
+                </select>
+                </li>
             </ul>
             
         </div>

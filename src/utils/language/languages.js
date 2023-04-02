@@ -1,4 +1,4 @@
-import { eng } from "./eng";
-import { mkd } from "./mkd";
+import { engLang } from "./eng";
+import { mkdLang } from "./mkd";
 
-export const languages = [eng, mkd];
+export const languages = [engLang, mkdLang];

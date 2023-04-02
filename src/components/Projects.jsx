@@ -7,6 +7,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 
 import github from '/assets/github.png';
 import StarWrapper from "../hoc/StarWrapper";
+import { useContext } from "react";
+import { LanguageContext } from "../Context/LanguageContext";
 
 
 const ProjectCard = ({index, name, description, tags, image, frontend, backend}) =>{
@@ -63,11 +65,12 @@ const ProjectCard = ({index, name, description, tags, image, frontend, backend})
 
 
 const Projects = () => {
+    const {language, changeLanguage} = useContext(LanguageContext);
   return (
     <>
         <motion.div variants={textVariant()}>
-            <p className={`${styles.sectionSubText} `}>My work</p>
-            <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+            <p className={`${styles.sectionSubText} `}>{language[4].my_work}</p>
+            <h2 className={`${styles.sectionHeadText}`}>{language[4].proj}</h2>
         </motion.div>
 
         <div className='w-full flex'>
@@ -75,16 +78,12 @@ const Projects = () => {
             variants={fadeIn("", "", 0.1, 1)}
             className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
             >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Itaque, esse! Sequi quas culpa distinctio rerum asperiores 
-            adipisci assumenda, repellendus temporibus omnis, aperiam 
-            laudantium doloremque, pariatur dolorem provident quo 
-            veritatis sint.
+            {language[4].content}
             </motion.p>
         </div>
 
         <div className='mt-20 flex flex-wrap gap-7'>
-            {projects.map((project, index) => (
+            {language[7].map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
             ))}
         </div>

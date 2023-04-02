@@ -41,22 +41,6 @@ const technologies = [
         icon: cpp,
     },
     {
-        name: "js",
-        icon: js,
-    },
-    {
-        name: "html",
-        icon: htmlpic,
-    },
-    {
-        name: "css",
-        icon: css,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
         name: "mongo",
         icon: mongo,
     },
@@ -64,22 +48,22 @@ const technologies = [
         name: "next",
         icon: next,
     },
-    {
-        name: "nodejs",
-        icon: nodejs,
-    },
-    {
-        name: "prisma",
-        icon: prisma,
-    },
-    {
-        name: "python",
-        icon: python,
-    },
-    {
-        name: "sass",
-        icon: sass,
-    },
+    // {
+    //     name: "nodejs",
+    //     icon: nodejs,
+    // },
+    // {
+    //     name: "prisma",
+    //     icon: prisma,
+    // },
+    // {
+    //     name: "python",
+    //     icon: python,
+    // },
+    // {
+    //     name: "sass",
+    //     icon: sass,
+    // },
     {
         name: "tailwind",
         icon: tailwind,
@@ -88,14 +72,14 @@ const technologies = [
         name: "tf",
         icon: tf,
     },
-    {
-        name: "trpc",
-        icon: trpc,
-    },
-    {
-        name: "ts",
-        icon: ts,
-    },
+    // {
+    //     name: "trpc",
+    //     icon: trpc,
+    // },
+    // {
+    //     name: "ts",
+    //     icon: ts,
+    // },
     {
         name: "sql",
         icon: sql,

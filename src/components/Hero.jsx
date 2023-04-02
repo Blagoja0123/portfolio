@@ -1,20 +1,23 @@
+import { useContext } from "react";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas/Earth"
 import {motion} from 'framer-motion';
+import { LanguageContext } from "../Context/LanguageContext";
 
 const Hero = () => {
+  const {language, changeLanguage} = useContext(LanguageContext);
   return (
     <>
-      <section className="relative w-full mx-auto h-screen">
-          <div className={`flex flex-wrap absolute inset-0 top-[50px] w- mx-24 ${styles.paddingX} justify-center items-start h-full`}>
+      <section className="relative w-full sm:mx-none mx-auto h-screen">
+          <div className={`flex flex-wrap absolute inset-0 max-w-7xl top-[50px] mx-auto ${styles.paddingX} justify-center items-start h-full`}>
               <div className="flex flex-row gap-3 lg:h-56 sm:w-screen p-4">
                 <div className="flex flex-col justify-center items-center mt-5 ">
                     <div className="lg:w-5 lg:h-10 w-5 h-5 rounded-full bg-sky-400"/>
                     <div className="w-1 sm:h-80 h-[40px] blue-gradient"/>
                 </div>
                 <div>
-                  <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className=" text-[#37c3ff]">Blagoja</span></h1>
-                  <p className={`${styles.heroSubText} mt-2 text-white-100`}>I compete in international competitions and aspire to be a software engineer</p>
+                  <h1 className={`${styles.heroHeadText} text-white`}>{language[2].intro}<span className=" text-[#37c3ff]">{language[2].name}</span></h1>
+                  <p className={`${styles.heroSubText} mt-2 text-white-100`}>{language[2].subtext}</p>
                 </div>
               </div>
               <div className="w-[31rem] h-[31rem]">
