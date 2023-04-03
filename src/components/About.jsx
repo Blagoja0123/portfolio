@@ -10,7 +10,6 @@ import { LanguageContext } from '../Context/LanguageContext';
 
 
 const Card = ({index, title, icon}) =>{
-    console.log(title);
     return (
         <Tilt className='xs:w-[250px] w-full'>
             <motion.div

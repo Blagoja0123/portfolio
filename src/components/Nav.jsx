@@ -14,9 +14,8 @@ const Nav = () => {
       ];
 
     const {language, changeLanguage} = useContext(LanguageContext);
-    console.log(language);
   return (
-    <div className="w-screen h-16 rounded-lg leading-none content-center flex items-center divide-x divide-gray-600">
+    <div className="w-full h-16 rounded-lg leading-none content-center flex items-center divide-x divide-gray-600 overflow-hidden">
         <div className="w-full h-20 absolute -z-1 -inset-0.5 bg-gradient-to-r from-cyan-200 to-blue-900 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"/>
         <div className='w-full flex z-10 relative items-center h-16 bg-black justify-between px-4'>
             <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Blagoja</span>
