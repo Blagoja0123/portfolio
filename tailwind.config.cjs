@@ -24,6 +24,7 @@ module.exports = {
     },
     animation: {
       tilt: 'tilt 10s infinite linear',
+      dropdown: 'rotateMenu 400ms ease-in-out forwards',
     },
     keyframes: {
       tilt: {
@@ -35,6 +36,17 @@ module.exports = {
         },
         '75%': {
           transform: 'rotate(-2deg)',
+        },
+      },
+      rotateMenu: {
+        '0%': {
+            transform: 'rotateX(-90deg)'
+        },
+        '70%': {
+            transform: 'rotateX(20deg)' 
+        },
+        '100%': {
+            transform: 'rotateX(0deg) '
         },
       },
     },
