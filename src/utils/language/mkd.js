@@ -13,6 +13,7 @@ import authimg from '/assets/authimg.png';
 import mkd from '/assets/mkd.png';
 
 let language = {
+    index: "1",
     name: "Macedonian",
     icon: mkd,
 }

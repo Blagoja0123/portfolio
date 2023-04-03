@@ -9,32 +9,35 @@ import { useContext } from 'react';
 import { LanguageContext } from '../Context/LanguageContext';
 
 
-const Card = ({index, title, icon}) =>(
-    <Tilt className='xs:w-[250px] w-full'>
-        <motion.div
-        variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-        className='w-full lightblue-teal-gradient p-[1px] rounded-xl shadow-card'
-        >
-            <div
-                options={{
-                    max: 45,
-                    scale: 1,
-                    speed: 450,
-                }}
-                className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+const Card = ({index, title, icon}) =>{
+    console.log(title);
+    return (
+        <Tilt className='xs:w-[250px] w-full'>
+            <motion.div
+            variants={fadeIn("right", "spring", index * 0.5, 0.75)}
+            className='w-full lightblue-teal-gradient p-[1px] rounded-xl shadow-card'
             >
-            <img
-                src={icon}
-                alt='web-development'
-                className='w-16 h-16 object-contain fill-white text-white stroke-white '
-            />
-            <h3 className='text-white text-[20px] font-bold text-center'>
-                {title}
-            </h3>
-            </div>
-        </motion.div>
-    </Tilt>
-)
+                <div
+                    options={{
+                        max: 45,
+                        scale: 1,
+                        speed: 450,
+                    }}
+                    className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+                >
+                <img
+                    src={icon}
+                    alt='web-development'
+                    className='w-16 h-16 object-contain fill-white text-white stroke-white '
+                />
+                <h3 className='text-white text-[20px] font-bold text-center'>
+                    {title}
+                </h3>
+                </div>
+            </motion.div>
+        </Tilt>
+    )
+}
 
 const About = () => {
     const {language, changeLanguage} = useContext(LanguageContext);

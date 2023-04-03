@@ -36,6 +36,9 @@ const Nav = () => {
                 }
                 <li className='md:ml-8 text-xl md:my-0 my-7'>
                 <select onChange={changeLanguage} className='bg-tertiary rounded-lg flex content-center items-center h-10 text-xl'>
+                    <option className='text-xl' value="none">
+                        {language[0].name}
+                    </option>
                     {
                         languages.map((lang, index) =>(
                             <option key={lang[0].name} value={index} className='text-xl'>
@@ -43,6 +46,7 @@ const Nav = () => {
                             </option>
                         ))
                     }
+                    
                 </select>
                 </li>
             </ul>

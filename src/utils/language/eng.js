@@ -13,6 +13,7 @@ import authimg from '/assets/authimg.png';
 import eng from '/assets/eng.png';
 
 let language = {
+    index: "0",
     name: "English",
     icon: eng,
 }
