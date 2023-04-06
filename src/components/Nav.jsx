@@ -5,6 +5,7 @@ import LanguageProvider, { LanguageContext } from '../Context/LanguageContext';
 import { useContext } from 'react';
 import '../index.css';
 import { useEffect } from 'react';
+import logo from '/assets/logo.png';
 const Nav = () => {
 
     const[open, setOpen] = useState(false);
@@ -32,7 +33,10 @@ const Nav = () => {
     <div className="w-full h-16 rounded-lg leading-none flex content-center  items-center divide-x divide-gray-600">
         <div className="w-full h-20 absolute -z-[-1] -inset-0.5 bg-gradient-to-r from-cyan-200 to-blue-900 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"/>
             <div className='w-full flex z-10 relative items-center h-16 bg-black justify-between px-4'>
-                <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Blagoja</span>
+                <div className='flex gap-3'>
+                    <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
+                    <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Blagoja</span>
+                </div>
             
                 <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 cursor-pointer md:hidden flex items-center justify-center'>
                 {open ? <span className="material-symbols-outlined">close</span> 
