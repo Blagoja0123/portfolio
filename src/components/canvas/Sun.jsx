@@ -24,7 +24,7 @@ const SphereAbs = (props) =>{
 }
 
 const GenerateSpheres = () =>{
-    const base = 2.0;
+    const base = 1.5;
     const colors = ['#FCF5CC','#E6B529','#FCBE51','#E6923E','#FF8545'];
     return (
         <>
