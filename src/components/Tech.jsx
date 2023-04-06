@@ -7,6 +7,7 @@ import { styles } from '../styles';
 import { useContext } from 'react';
 import { LanguageContext } from '../Context/LanguageContext';
 const TechCard = ({index, icon, name}) =>{
+  console.log(name);
   return (
     <Tilt className='xs:w-[250px] w-full'>
         <motion.div
@@ -35,14 +36,17 @@ const TechCard = ({index, icon, name}) =>{
 
 const Tech = () => {
   const{language, changeLanguage} = useContext(LanguageContext);
+  console.log(technologies)
   return (
     <>
       <motion.div variants={textVariant()}>
-        <h2 className={styles.sectionHeadText}>{language[8].tech}</h2>
+        <h2 className={styles.sectionHeadText}>{language[8].tech}.</h2>
       </motion.div>
-      <div className='mt-20 flex flex-wrap gap-10 justify-center'>
+      <div className='flex-row flex flex-wrap gap-24 justify-center'>
         {technologies.map((tech, index) =>(
-            <TechCard key={tech.name} index={index} icon={tech.icon} name={tech.name}/>
+            <div key={index} className='w-52 h-52'>
+              <TechCard index={index} icon={tech.icon} name={tech.name}/>
+            </div>
         ))}
       </div>
     </>

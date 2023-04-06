@@ -18,9 +18,18 @@ let language = {
     icon: mkd,
 }
 let nav = [
-    "ЗА МЕНЕ",
-    "ИСКУСТВО",
-    "КОНТАКТ",
+    {
+        id: "about",
+        title: "ЗА МЕНЕ",
+    },
+    {
+        id: "experience",
+        title: "ИСКУСТВО",
+    },
+    {
+        id: "contact",
+        title: "КОНТАКТ",
+    }
 ]
 let hero = {
     intro: "Здраво, јас сум ",

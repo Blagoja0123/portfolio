@@ -2,7 +2,6 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { projects } from "../utils/constants.js";
 import { fadeIn, textVariant } from "../utils/motion";
 
 import github from '/assets/github.png';

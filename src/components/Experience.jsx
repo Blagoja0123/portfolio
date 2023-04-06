@@ -2,7 +2,6 @@ import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeli
 import {motion} from "framer-motion";
 import "react-vertical-timeline-component/style.min.css";
 import StarWrapper from "../hoc/StarWrapper";
-import { experience } from "../utils/constants";
 import { textVariant } from "../utils/motion";
 
 import { styles } from "../styles";

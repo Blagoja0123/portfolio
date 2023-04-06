@@ -4,15 +4,28 @@ import { languages } from '../utils/language/languages';
 import LanguageProvider, { LanguageContext } from '../Context/LanguageContext';
 import { useContext } from 'react';
 import '../index.css';
+import { useEffect } from 'react';
 const Nav = () => {
 
     const[open, setOpen] = useState(false);
+    const[scrolled, setScrolled] = useState(false);
 
-    let Links =[
-        {name:"ABOUT",link:"/"},
-        {name:"EXPERIENCE",link:"/"},
-        {name:"CONTACT",link:"/"},
-      ];
+    useEffect(()=>{
+
+        const handleScroll = () => {
+            const scrollTop = window.scrollY;
+            if(scrollTop > 100){
+                setScrolled(true);
+            }else{
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, [])
+    
 
     const {language, changeLanguage} = useContext(LanguageContext);
   return (
@@ -29,8 +42,8 @@ const Nav = () => {
             <ul className={`md:flex md:items-center md:pb-0 pb-12 absolute md:static rounded-3xl bg-black md:z-auto -z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-700 ease-in ${open ? 'top-20':'top-[-490px]'}`}>
                 {
                 language[1].map((link)=>(
-                    <li key={link} className='md:ml-8 text-xl md:my-0 my-7'>
-                        <a href="#" className='text-white hover:text-gray-400 duration-500'>{link}</a>
+                    <li key={link.id} className='md:ml-8 text-xl md:my-0 my-7'>
+                        <a href={`#${link.id}`} className='text-white hover:text-gray-400 duration-500'>{link.title}</a>
                     </li>
                 ))
                 }

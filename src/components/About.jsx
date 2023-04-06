@@ -3,7 +3,6 @@ import Tilt from 'react-tilt';
 import {motion} from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { styles } from '../styles';
-import { services } from '../utils/constants';
 import StarWrapper from '../hoc/StarWrapper';
 import { useContext } from 'react';
 import { LanguageContext } from '../Context/LanguageContext';

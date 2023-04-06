@@ -17,10 +17,19 @@ let language = {
     name: "English",
     icon: eng,
 }
-let nav =[
-    "ABOUT",
-    "EXPERIENCE",
-    "CONTACT",
+let nav = [
+    {
+        id: "about",
+        title: "ABOUT",
+    },
+    {
+        id: "experience",
+        title: "EXPERIENCE",
+    },
+    {
+        id: "contact",
+        title: "CONTACT",
+    }
 ]
 let hero = {
     intro: "Hi, I'm ",
