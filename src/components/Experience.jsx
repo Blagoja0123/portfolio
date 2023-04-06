@@ -54,17 +54,17 @@ const Experience = () => {
             </p>
         </motion.div>
         <div className='mt-20 flex flex-col'>
-        <VerticalTimeline>
-          {language[6].map((item, index) => (
-            <ExpCard
-              key={`experience-${index}`}
-              experience={item}
-            />
-          ))}
-        </VerticalTimeline>
-      </div>
+            <VerticalTimeline>
+            {language[6].map((item, index) => (
+                <ExpCard
+                key={`experience-${index}`}
+                experience={item}
+                />
+            ))}
+            </VerticalTimeline>
+        </div>
     </>
   )
 }
 
-export default StarWrapper(Experience, "work");
+export default StarWrapper(Experience, "experience");
