@@ -183,6 +183,18 @@ let content = {
     wid: "What I have done so far",
     tech: "Technologies"
 }
+let contact = {
+    git: "get in touch",
+    title: "Contact.",
+    name: "Your Name",
+    wname: "What's your name?",
+    email: "Your email",
+    wemail: "What's your email?",
+    msg: "Your message",
+    wmsg: "What do you want to say?",
+    btn: "Send",
+    ibtn: "Sending..."   
+}
 export const engLang = [
     language,
     nav,
@@ -192,5 +204,6 @@ export const engLang = [
     services,
     experience,
     projects,
-    content
+    content,
+    contact,
 ]

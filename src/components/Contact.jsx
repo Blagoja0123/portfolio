@@ -7,20 +7,20 @@ import { styles } from "../styles";
 import emailjs from '@emailjs/browser'
 import StarWrapper from '../hoc/StarWrapper';
 import Sun from './canvas/Sun';
-
+import { useContext } from 'react';
+import {LanguageContext} from '../Context/LanguageContext'
 //process.env.API_KEY
 //process.env.SERVICE_ID
 //process.env.TEMPLATE_ID
 
 const Contact = () => {
-    
+    const {language, changeLanguage} = useContext(LanguageContext);
     const formRef = useRef();
     const [form, setForm] = useState({
         name: "",
         email: "",
         message: "",
     });
-    console.log(import.meta.env.VITE_APP_SERVICE_ID,import.meta.env.VITE_APP_TEMPLATE_ID,import.meta.env.VITE_APP_API_KEY)
     const [loading, setLoading] = useState(false);
 
     const handleChange = (e) => {
@@ -78,8 +78,8 @@ const Contact = () => {
             variants={slideIn("left", "tween", 0.2, 1)}
             className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
             >
-                <p className={styles.sectionSubText}>Get in touch</p>
-                <h3 className={styles.sectionHeadText}>Contact.</h3>
+                <p className={styles.sectionSubText}>{language[9].git}</p>
+                <h3 className={styles.sectionHeadText}>{language[9].title}</h3>
 
                 <form
                 ref={formRef}
@@ -87,35 +87,35 @@ const Contact = () => {
                 className='mt-12 flex flex-col gap-8'
                 >
                 <label className='flex flex-col'>
-                    <span className='text-white font-medium mb-4'>Your Name</span>
+                    <span className='text-white font-medium mb-4'>{language[9].name}</span>
                     <input
                     type='text'
                     name='name'
                     value={form.name}
                     onChange={handleChange}
-                    placeholder="What's your name?"
+                    placeholder={language[9].wname}
                     className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                     />
                 </label>
                 <label className='flex flex-col'>
-                    <span className='text-white font-medium mb-4'>Your email</span>
+                    <span className='text-white font-medium mb-4'>{language[9].email}</span>
                     <input
                     type='email'
                     name='email'
                     value={form.email}
                     onChange={handleChange}
-                    placeholder="What's your email?"
+                    placeholder={language[9].wemail}
                     className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                     />
                 </label>
                 <label className='flex flex-col'>
-                    <span className='text-white font-medium mb-4'>Your Message</span>
+                    <span className='text-white font-medium mb-4'>{language[9].msg}</span>
                     <textarea
                     rows={7}
                     name='message'
                     value={form.message}
                     onChange={handleChange}
-                    placeholder='What do you want to say?'
+                    placeholder={language[9].wmsg}
                     className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                     />
                 </label>
@@ -124,7 +124,7 @@ const Contact = () => {
                     type='submit'
                     className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
                 >
-                    {loading ? "Sending..." : "Send"}
+                    {loading ? language[9].ibtn : language[9].btn}
                 </button>
                 </form>
             </motion.div>

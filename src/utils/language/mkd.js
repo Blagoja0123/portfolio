@@ -183,6 +183,18 @@ let content = {
     wid: "Што сум направил до сега",
     tech: "Технологии"
 }
+let contact = {
+    git: "стапи во контакт",
+    title: "Контакт.",
+    name: "Твоето Име",
+    wname: "Кое е твоето име?",
+    email: "Твојот е-мајл",
+    wemail: "Кој е твојот е-мајл?",
+    msg: "Твојата порака",
+    wmsg: "Што сакаш да кажаш?",
+    btn: "Испрати",
+    ibtn: "Се испраќа..."   
+}
 export const mkdLang = [
     language,
     nav,
@@ -193,4 +205,5 @@ export const mkdLang = [
     experience,
     projects,
     content,
+    contact,
 ]
