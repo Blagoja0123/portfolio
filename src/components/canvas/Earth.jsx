@@ -53,7 +53,7 @@ const Subsphere = () =>{
 export const EarthCanvas = () =>{
     return(
             <Canvas camera={{position: [0, 0, 11]}}>
-                <Suspense>
+                <Suspense fallback={<CanvasLoader/>}>
                     <Earth/>
                     <Subsphere/>
                     <Atmosphere/>

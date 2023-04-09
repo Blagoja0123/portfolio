@@ -8,7 +8,9 @@ import emailjs from '@emailjs/browser'
 import StarWrapper from '../hoc/StarWrapper';
 import {Sun} from './canvas';
 import { useContext } from 'react';
-import {LanguageContext} from '../Context/LanguageContext'
+import {LanguageContext} from '../Context/LanguageContext';
+
+import Instagram from '/assets/Instagram.svg'
 //process.env.API_KEY
 //process.env.SERVICE_ID
 //process.env.TEMPLATE_ID
@@ -76,7 +78,7 @@ const Contact = () => {
         >
             <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+            className='flex-[0.75] bg-black-100 p-8 rounded-2xl justify-center'
             >
                 <p className={styles.sectionSubText}>{language[9].git}</p>
                 <h3 className={styles.sectionHeadText}>{language[9].title}</h3>
@@ -119,10 +121,14 @@ const Contact = () => {
                     className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                     />
                 </label>
-
+                <ul className='flex gap-5 px-44'>
+                    <li className='text-3xl cursor-pointer'><a target='_blank' href='https://www.instagram.com/blagoja1234/'><i className="fa-brands fa-instagram" style={{color: "#ffffff"}}/></a></li>
+                    <li className='text-3xl cursor-pointer'><a target='_blank' href='https://github.com/Blagoja0123'><i className="fa-brands fa-github" style={{color: "#ffffff"}}/></a></li>
+                    <li className='text-3xl cursor-pointer'><a target='_blank' href='https://www.linkedin.com/in/blagoja-dzorlev-419685270/'><i className="fa-brands fa-linkedin" style={{color: "#ffffff"}}/></a></li>
+                </ul>
                 <button
                     type='submit'
-                    className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+                    className='bg-tertiary py-3 px-8 rounded-xl outline-none w-full text-white font-bold shadow-md shadow-primary'
                 >
                     {loading ? language[9].ibtn : language[9].btn}
                 </button>
