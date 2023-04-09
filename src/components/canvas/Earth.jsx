@@ -22,25 +22,47 @@ const Earth = (props) =>{
 
     return (
         <mesh ref={ref} rotation={[0, 0, Math.PI / 4]}>
-            <ambientLight intensity={1}/>
+            <ambientLight intensity={10}/>
+            <OrbitControls enableZoom={false}/>
             <sphereGeometry attach="geometry" args={[5, 40, 40]}/>
             <meshBasicMaterial attach={"material"} map={texture} specularMap={normal}/>
         </mesh>
     )
 }
 
+const Atmosphere = () =>{
+    return (
+        <mesh>
+            <ambientLight intensity={100.0} color={0xffffff}/>
+            <sphereGeometry attach="geometry" args={[5.5, 40, 40]}/>
+            <meshBasicMaterial attach={"material"} color={0xB5F6FF} transparent={true} opacity={0.09}/>
+        </mesh>
+    )
+}
+
+const Subsphere = () =>{
+    return (
+        <mesh>
+            <ambientLight intensity={100.0} color={0xffffff}/>
+            <sphereGeometry attach="geometry" args={[5.25, 40, 40]}/>
+            <meshBasicMaterial attach={"material"} color={0x86F0FF} transparent={true} opacity={0.09}/>
+        </mesh>
+    )
+}
 
 export const EarthCanvas = () =>{
     return(
             <Canvas camera={{position: [0, 0, 11]}}>
                 <Suspense>
-                    <ambientLight intensity={100}/>
+                    {/* <ambientLight intensity={100}/>
                     <CircleAbs color={0x0033FF} size={[5.9, 30]} opacity={0.9}/>
                     <CircleAbs color={0x04007D} size={[6, 30]} opacity={0.7}/>
                     <CircleAbs color={0x4F79C3} size={[6.2, 30]} opacity={0.6}/>
                     <CircleAbs color={0x87D4E4} size={[6.35, 30]} opacity={0.3}/>
-                    <CircleAbs color={0x000000} size={[6.45, 30]} opacity={0.4}/>
+                    <CircleAbs color={0x000000} size={[6.45, 30]} opacity={0.4}/> */}
                     <Earth/>
+                    <Subsphere/>
+                    <Atmosphere/>
                 </Suspense>
                 <Preload all/>
             </Canvas>
