@@ -6,7 +6,7 @@ import { styles } from "../styles";
 
 import emailjs from '@emailjs/browser'
 import StarWrapper from '../hoc/StarWrapper';
-import Sun from './canvas/Sun';
+import {Sun} from './canvas';
 import { useContext } from 'react';
 import {LanguageContext} from '../Context/LanguageContext'
 //process.env.API_KEY

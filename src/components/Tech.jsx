@@ -6,8 +6,9 @@ import {motion} from 'framer-motion';
 import { styles } from '../styles';
 import { useContext } from 'react';
 import { LanguageContext } from '../Context/LanguageContext';
+
+
 const TechCard = ({index, icon, name}) =>{
-  console.log(name);
   return (
     <Tilt className='xs:w-[250px] w-full'>
         <motion.div
@@ -36,7 +37,6 @@ const TechCard = ({index, icon, name}) =>{
 
 const Tech = () => {
   const{language, changeLanguage} = useContext(LanguageContext);
-  console.log(technologies)
   return (
     <>
       <motion.div variants={textVariant()}>

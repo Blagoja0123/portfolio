@@ -1,9 +1,7 @@
 import { Preload } from '@react-three/drei';
-import { Canvas, useFrame } from '@react-three/fiber'
-import React from 'react'
+import { Canvas, useFrame } from '@react-three/fiber';
 import { Suspense } from 'react';
-import { useRef } from 'react'
-import { StarsCanvas } from './Stars';
+import { useRef } from 'react';
 
 
 const SphereAbs = (props) =>{

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas/Earth"
+import { EarthCanvas } from "./canvas"
 import {motion} from 'framer-motion';
 import { LanguageContext } from "../Context/LanguageContext";
 
