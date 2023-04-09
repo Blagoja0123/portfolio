@@ -54,12 +54,6 @@ export const EarthCanvas = () =>{
     return(
             <Canvas camera={{position: [0, 0, 11]}}>
                 <Suspense>
-                    {/* <ambientLight intensity={100}/>
-                    <CircleAbs color={0x0033FF} size={[5.9, 30]} opacity={0.9}/>
-                    <CircleAbs color={0x04007D} size={[6, 30]} opacity={0.7}/>
-                    <CircleAbs color={0x4F79C3} size={[6.2, 30]} opacity={0.6}/>
-                    <CircleAbs color={0x87D4E4} size={[6.35, 30]} opacity={0.3}/>
-                    <CircleAbs color={0x000000} size={[6.45, 30]} opacity={0.4}/> */}
                     <Earth/>
                     <Subsphere/>
                     <Atmosphere/>
