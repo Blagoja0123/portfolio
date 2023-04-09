@@ -10,7 +10,6 @@ import {Sun} from './canvas';
 import { useContext } from 'react';
 import {LanguageContext} from '../Context/LanguageContext';
 
-import Instagram from '/assets/Instagram.svg'
 //process.env.API_KEY
 //process.env.SERVICE_ID
 //process.env.TEMPLATE_ID
