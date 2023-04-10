@@ -10,10 +10,6 @@ import {Sun} from './canvas';
 import { useContext } from 'react';
 import {LanguageContext} from '../Context/LanguageContext';
 
-//process.env.API_KEY
-//process.env.SERVICE_ID
-//process.env.TEMPLATE_ID
-
 const Contact = () => {
     const {language, changeLanguage} = useContext(LanguageContext);
     const formRef = useRef();
@@ -120,7 +116,7 @@ const Contact = () => {
                     className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
                     />
                 </label>
-                <ul className='flex gap-5 px-44'>
+                <ul className='flex gap-5 mx-auto'>
                     <li className='text-3xl cursor-pointer'><a target='_blank' href='https://www.instagram.com/blagoja1234/'><i className="fa-brands fa-instagram" style={{color: "#ffffff"}}/></a></li>
                     <li className='text-3xl cursor-pointer'><a target='_blank' href='https://github.com/Blagoja0123'><i className="fa-brands fa-github" style={{color: "#ffffff"}}/></a></li>
                     <li className='text-3xl cursor-pointer'><a target='_blank' href='https://www.linkedin.com/in/blagoja-dzorlev-419685270/'><i className="fa-brands fa-linkedin" style={{color: "#ffffff"}}/></a></li>
