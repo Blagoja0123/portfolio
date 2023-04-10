@@ -180,6 +180,7 @@ let projects = [
     },
 ]
 let content = {
+    contact: "Contact",
     exp: "Experience.",
     wid: "What I have done so far",
     tech: "Technologies",
@@ -205,6 +206,18 @@ let testimonials = [
         role: 'Teacher at SOU "Jane Sandanski"',
         name: "Zorica Vitanova",
         contact: " +389 75 320 833 or zorica_peceva@yahoo.co.uk"
+    },
+    {
+        testimonial: "I had the pleasure of teaching Blagoja during his time in my calculus class, and I can confidently say that he is one of the most talented and hardworking students I have had the pleasure of teaching. Throughout the semester, Blagoja demonstrated an outstanding ability to grasp complex mathematical concepts and apply them to solve challenging problems. He consistently achieved high marks on exams, displaying an exceptional level of dedication to his studies. What sets Blagoja apart from his peers is not only his strong mathematical skills but also his ability to think critically and independently.",
+        role: 'Teacher at SOU "Jane Sandanski"',
+        name: "Bozhana Lazarova",
+        contact: "lazarovabozana@yahoo.com"
+    },
+    {
+        testimonial: "During the lessons, the student is always positive, friendly and ready to create a good working environment. His intellectual abilities surpass those of most of his peers, and this makes him capable of both independent performance of work tasks and teamwork. He is diligent, energetic and full of initiative. Challenges inspire him, and this can be seen from his achievements in many competitions, as well as participation in projects of various kinds. For Blagoja, there is no unsolvable problem, on the contrary, everything is a challenge for him. With his diligence, determination, creativity and ambition, he manages to make the unsolvable solvable. He uses his leadership spirit and communication skills to activate his entire environment. That's why he successfully runs the school's website, which shows himself to be a successful informatics expert, a successful journalist and an excellent connoisseur of his native and foreign languages.",
+        role: 'Teacher at SOU "Jane Sandanski"',
+        name: "Elena Lazareva",
+        contact: "@yahoo.com"
     },
 ]
 
