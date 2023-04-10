@@ -1,5 +1,5 @@
 
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import {
   motion,
   useScroll,
@@ -11,6 +11,7 @@ import StarWrapper from "../hoc/StarWrapper";
 import { textVariant, fadeIn, staggerContainer, slideIn } from "../utils/motion";
 import { styles } from "../styles";
 import Tilt from 'react-tilt';
+import { LanguageContext } from "../Context/LanguageContext";
 
 function useParallax(value, distance) {
   return useTransform(value, [0, 1], [-distance, distance]);
@@ -37,13 +38,15 @@ const Awards = () =>{
       damping: 30,
       restDelta: 0.001
     });
+    
+    const {language, changeLanguage} = useContext(LanguageContext);
   return (
     <>
         <motion.div variants={textVariant()}>
-            <h2 className={styles.sectionHeadText}>Awards.</h2>
-            <p className={styles.sectionSubText}>A collection of awards from competitions and certificates from projects I've participated in</p>
+            <h2 className={styles.sectionHeadText}>{language[12].aw}</h2>
+            <p className={styles.sectionSubText}>{language[12].content}</p>
         </motion.div>
-        <motion.div variants={slideIn("left", "spring", 0.1, 1)} className="flex scroll-smooth overflow-y-hidden overflow-x-scroll w-full">
+        <motion.div variants={slideIn("left", "spring", 0.1, 1)} className="flex scroll scroll-smooth overflow-y-hidden overflow-x-scroll w-full">
             {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18].map((image) => (
                 <Image id={image} />
             ))}

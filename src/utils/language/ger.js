@@ -181,7 +181,11 @@ let projects = [
 let content = {
 
     wid: "Was ich bisher gemacht habe",
-    tech: "Technologien"
+    tech: "Technologien",
+    exp: "Erfahrung.",
+    contact: "Kontakt",
+    others: "Was andere sagen",
+    test: "Empfehlungen."
 }
 let contact = {
     git: "in Kontakt kommen",
@@ -195,6 +199,27 @@ let contact = {
     btn: "Senden",
     ibtn: "Senden..."   
 }
+
+let temp = "Ich bin Blagojas Englischlehrer seit September 2019. Bisher hat er in meiner Klasse hervorragende Leistungen gezeigt, basierend auf seinen Noten, seiner Anwesenheit und seiner Teilnahme am Unterricht. Er beteiligt sich aktiv an Unterrichtsdiskussionen und hat sein umfangreiches Wissen zu verschiedenen Themen unter Beweis gestellt. Seine mündlichen und schriftlichen Sprachkenntnisse sind auf einem wirklich hohen Niveau, was für jeden Lehrer eine Freude ist. Mit Stolz bestätige ich seine Teilnahme am lokalen, regionalen und staatlichen Wettbewerb der englischen Sprache, der von ELTAM organisiert wird, sowie am internationalen Wettbewerb „Best in English“. Da Gruppenaufgaben Teil der Unterrichtsaktivitäten sind, kann man sagen, dass Blagoja sich als außergewöhnlicher Teamplayer erwiesen hat, weil er die ihm übertragenen Aufgaben fehlerlos erledigt und keine Schwierigkeiten hat, Fristen einzuhalten. Wenn ihm die Rolle eines Leiters übertragen wird, hat er bewiesen, dass er über fantastische organisatorische Fähigkeiten verfügt, Initiativen ergreift und die besten Ergebnisse für das Problem liefert. Blagoja ist eine zuverlässige, vertrauenswürdige, gut gelaunte und aufgeschlossene Schülerin, die immer bereit ist, die anderen innerhalb und außerhalb des Klassenzimmers zu unterstützen."
+let testimonials = [
+    {
+        testimonial: temp,
+        role: 'Lehrerin bei SOU "Jane Sandanski"',
+        name: "Zorica Vitanova",
+        contact: " +389 75 320 833 oder zorica_peceva@yahoo.co.uk"
+    },
+]
+
+let philosophy = {
+    phil: "Philosophie",
+    content: " Ich glaube, es gibt keine Aufgabe, die zu schwierig ist, einfach eine Aufgabe, die ich noch nicht vollständig verstehe. Damit möchte ich alles, was ich tue, vollständig verstehen und lernen, damit ich mich in meiner Zukunft auszeichnen kann."
+}
+
+let awards = {
+    aw: "Auszeichnungen.",
+    content: "Eine Sammlung von Auszeichnungen von Wettbewerben und Zertifikaten von Projekten, an denen ich teilgenommen habe"
+}
+
 export const gerLang = [
     language,
     nav,
@@ -206,4 +231,7 @@ export const gerLang = [
     projects,
     content,
     contact,
+    testimonials,
+    philosophy,
+    awards
 ]

@@ -1,14 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { textVariant } from '../utils/motion';
 import { styles } from '../styles';
 import { motion } from 'framer-motion';
 import StarWrapper from '../hoc/StarWrapper';
+import { LanguageContext } from '../Context/LanguageContext';
 const Philosophy = () => {
+  const {language, changeLanguage} = useContext(LanguageContext)
   return (
     <>
         <motion.div variants={textVariant()}>
-            <h2 className={styles.sectionHeadText}>Philosophy</h2>
-            <p className={styles.sectionSubText}>" I believe there is no task that is too difficult, simply a task that I do not yet fully understand. With this I aim to fully understand everything I do and learn to allow me to excel in my future. "</p>
+            <h2 className={styles.sectionHeadText}>{language[11].phil}</h2>
+            <p className={styles.sectionSubText}>"{language[11].content}"</p>
         </motion.div>
     </>
   )

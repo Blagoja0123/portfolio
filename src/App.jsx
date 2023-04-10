@@ -9,7 +9,8 @@ import {
   Tech,
   Contact,
   Philosophy,
-  Awards
+  Awards,
+  Recommend
 } from "./components";
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Awards/>
             <Tech/>
             <Projects/>
+            <Recommend/>
             <div className='relative z-0'>
             <Contact />
             <StarsCanvas />

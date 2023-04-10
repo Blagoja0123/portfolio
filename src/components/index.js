@@ -8,5 +8,5 @@ import Projects from "./Projects";
 import Tech from "./Tech";
 import Philosophy from "./Philosophy";
 import Awards from "./Awards";
-
-export {About, Contact, Experience, Hero, Nav, Loader, Projects, Tech, Philosophy, Awards};
+import Recommend from "./Recommend";
+export {About, Contact, Experience, Hero, Nav, Loader, Projects, Tech, Philosophy, Awards, Recommend};

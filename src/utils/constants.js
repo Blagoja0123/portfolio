@@ -45,5 +45,22 @@ const technologies = [
     },
 ];
 
+export const testimonials = [
+    {
+        testimonial: "lorem ipsum",
+        name: "teacher",
+        role: "Professor at School",
+    },
+    {
+        testimonial: "lorem ipsum",
+        name: "teacher",
+        role: "Professor at School",
+    },
+    {
+        testimonial: "lorem ipsum",
+        name: "teacher",
+        role: "Professor at School",
+    },
+]
 
 export default technologies;

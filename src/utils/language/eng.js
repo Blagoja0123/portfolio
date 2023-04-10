@@ -119,7 +119,7 @@ let projects = [
         description: "A C# application using the ASP.NET web framework to make an API that allows a users to list products and others to place orders using a persistent cart system.",
         tags: [
             {
-                name: "c#",
+                name: "csharp",
             },
             {
                 name: "asp.net",
@@ -161,7 +161,7 @@ let projects = [
         description: "This application is made to explore the way in which databases store images without using 3rd party solutions such as: Firebase, AWS, Google Cloud, etc.",
         tags: [
             {
-                name: "c#",
+                name: "csharp",
             },
             {
                 name: "asp.net",
@@ -179,9 +179,11 @@ let projects = [
     },
 ]
 let content = {
-
+    exp: "Experience.",
     wid: "What I have done so far",
-    tech: "Technologies"
+    tech: "Technologies",
+    others: "What others say",
+    test: "Recommendations."
 }
 let contact = {
     git: "get in touch",
@@ -195,6 +197,26 @@ let contact = {
     btn: "Send",
     ibtn: "Sending..."   
 }
+let temp = "I have been Blagoja’s English teacher since September 2019. So far he has shown superior performance in my class, based on his grades, attendance and class participation. He is an active participant in class discussions, and he has shown his vast knowledge of various different topics.  His verbal and written language skills are on a truly high level, which is a pleasure for every teacher to encounter. I proudly confirm his participation in the local, regional and state competition of English language organized by ELTAM, as well as the international Best in English competition. Since group assignments are part of the class activities, it would be rightful to say that Blagoja has proved himself as an extraordinary team player because he flawlessly completes the tasks given to him and he has no difficulty in meeting deadlines. When given the role of a leader, he has proved to possess fantastic organizational skills, taking initiatives and providing the best results for the problem. Blagoja is a reliable, trustworthy, good – humored and open – minded student who is always willing to support the others in and out of the classroom."
+let testimonials = [
+    {
+        testimonial: temp,
+        role: 'Teacher at SOU "Jane Sandanski"',
+        name: "Zorica Vitanova",
+        contact: " +389 75 320 833 or zorica_peceva@yahoo.co.uk"
+    },
+]
+
+let philosophy = {
+    phil: "Philosophy",
+    content: " I believe there is no task that is too difficult, simply a task that I do not yet fully understand. With this I aim to fully understand everything I do and learn to allow me to excel in my future."
+}
+
+let awards = {
+    aw: "Awards.",
+    content: "A collection of awards from competitions and certificates from projects I've participated in"
+}
+
 export const engLang = [
     language,
     nav,
@@ -206,4 +228,7 @@ export const engLang = [
     projects,
     content,
     contact,
+    testimonials,
+    philosophy,
+    awards
 ]
