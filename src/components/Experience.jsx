@@ -36,7 +36,7 @@ const ExpCard = ({experience}) =>{
                 key={`experience-point-${index}`}
                 className='text-white-100 text-[14px] pl-1 tracking-wider'
             >
-                {point}
+                {point === "CV" ? <a href="https://drive.google.com/file/d/1OfF32XrfJ1wJKNFTdEZ2Y0pAY8RfgvPa/view?usp=share_link">CV</a> : point}
             </li>
         ))}
             </ul>
