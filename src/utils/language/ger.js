@@ -219,7 +219,7 @@ let testimonials = [
         testimonial: "Während des Unterrichts ist der Schüler immer positiv, freundlich und bereit, ein gutes Arbeitsumfeld zu schaffen. Seine intellektuellen Fähigkeiten übertreffen die der meisten seiner Altersgenossen, was ihn sowohl zur unabhängigen Ausführung von Arbeitsaufgaben als auch zur Teamarbeit befähigt. Er ist fleißig, energisch und voller Initiative. Herausforderungen spornen ihn an, was sich an seinen Erfolgen bei vielen Wettbewerben sowie der Teilnahme an Projekten unterschiedlichster Art ablesen lässt. Für Blagoja gibt es kein unlösbares Problem, im Gegenteil, für ihn ist alles eine Herausforderung. Mit Fleiß, Zielstrebigkeit, Kreativität und Ehrgeiz schafft er es, das Unlösbare lösbar zu machen. Er nutzt seinen Führungsgeist und seine Kommunikationsfähigkeit, um sein gesamtes Umfeld zu aktivieren. Deshalb betreibt er erfolgreich die Website der Schule, die sich als erfolgreicher Informatiker, erfolgreicher Journalist und ausgezeichneter Kenner seiner Mutter- und Fremdsprachen zeigt.",
         role: 'Lehrerin bei SOU "Jane Sandanski"',
         name: "Elena Lazareva",
-        contact: "@yahoo.com"
+        contact: "elenalazareva35@yahoo.com"
     },
 ]
 

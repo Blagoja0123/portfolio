@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import StarWrapper from "../hoc/StarWrapper";
 import { fadeIn, textVariant } from "../utils/motion";
-import {testimonials} from '../utils/constants'
 import { useContext } from "react";
 import { LanguageContext } from "../Context/LanguageContext";
 const RecommendCard = ({
