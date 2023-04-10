@@ -238,7 +238,7 @@ let testimonials = [
 
 let philosophy = {
     phil: "Philosophie",
-    content: " Ich glaube, es gibt keine Aufgabe, die zu schwierig ist, einfach eine Aufgabe, die ich noch nicht vollständig verstehe. Damit möchte ich alles, was ich tue, vollständig verstehen und lernen, damit ich mich in meiner Zukunft auszeichnen kann."
+    content: "Ich glaube, es gibt keine Aufgabe, die zu schwierig ist, einfach eine Aufgabe, die ich noch nicht vollständig verstehe. Damit möchte ich alles, was ich tue, vollständig verstehen und lernen, damit ich mich in meiner Zukunft auszeichnen kann."
 }
 
 let awards = {

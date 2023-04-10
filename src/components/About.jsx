@@ -41,7 +41,7 @@ const About = () => {
     const {language, changeLanguage} = useContext(LanguageContext);
   return (
     <>
-        <motion.div variants={textVariant()}>
+        <motion.div variants={textVariant()} className='sm:mt-30'>
             <p className={styles.sectionSubText}>{language[3].introduction}</p>
             <h2 className={styles.sectionHeadText}>{language[3].overview}</h2>
         </motion.div>
