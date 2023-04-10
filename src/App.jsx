@@ -7,7 +7,8 @@ import {
   Nav,
   Projects,
   Tech,
-  Contact
+  Contact,
+  Philosophy
 } from "./components";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
               <Hero />
             </div>
             <About/>
+            <Philosophy/>
             <Experience/>
             <Tech/>
             <Projects/>

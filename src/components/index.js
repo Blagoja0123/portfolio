@@ -6,5 +6,6 @@ import Nav from "./Nav";
 import Loader from "./Loader";
 import Projects from "./Projects";
 import Tech from "./Tech";
+import Philosophy from "./Philosophy";
 
-export {About, Contact, Experience, Hero, Nav, Loader, Projects, Tech};
+export {About, Contact, Experience, Hero, Nav, Loader, Projects, Tech, Philosophy};
