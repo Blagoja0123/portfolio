@@ -7,5 +7,6 @@ import Loader from "./Loader";
 import Projects from "./Projects";
 import Tech from "./Tech";
 import Philosophy from "./Philosophy";
+import Awards from "./Awards";
 
-export {About, Contact, Experience, Hero, Nav, Loader, Projects, Tech, Philosophy};
+export {About, Contact, Experience, Hero, Nav, Loader, Projects, Tech, Philosophy, Awards};
