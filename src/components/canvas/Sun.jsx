@@ -38,7 +38,7 @@ const GenerateSpheres = () =>{
 const Sun = () => {
   return (
     <Canvas camera={{position: [0, 0, 11]}}>
-        <Suspense fallback={<CanvasLoader/>}>
+        <Suspense fallback={null}>
             <GenerateSpheres/>
         </Suspense>
         <Preload all/>

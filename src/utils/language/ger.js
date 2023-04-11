@@ -187,7 +187,9 @@ let content = {
     exp: "Erfahrung",
     contact: "Kontakt",
     others: "Was andere sagen",
-    test: "Empfehlungen"
+    test: "Empfehlungen",
+    techcontent: "Dies ist eine unvollständige Liste von Technologien, mit denen ich vertraut bin. Um mehr darüber zu sehen, womit ich gearbeitet habe, besuchen Sie mein Github-Profil im Kontaktbereich",
+    techsub: "Technologie, mit der ich vertraut bin",
 }
 let contact = {
     git: "in Kontakt kommen",
@@ -222,28 +224,67 @@ let testimonials = [
         name: "Elena Lazareva",
         contact: "elenalazareva35@yahoo.com"
     },
-    {
-        testimonial: "Als Professor und Mentor von Blagoja habe ich mich besonders gefreut, diese Empfehlung zu schreiben, da wir eine besondere Zusammenarbeit mit ihm haben, was für mich eine neue und wunderbare Erfahrung ist. Ich empfinde ihn als sympathischen, großzügigen, vor allem loyalen und ehrgeizigen jungen Mann, der auch in Zukunft alle unternehmerischen Herausforderungen erfolgreich meistern wird. Blagoja ist ein fähiger, unabhängiger Teenager mit hervorragenden Kommunikationsfähigkeiten, eine angenehme und anpassungsfähige Person, die alltägliche Aufgaben mit unglaublicher Leichtigkeit bewältigt und auf die man sich immer verlassen kann, ein echter Teamplayer (wie seine Debatten, Workshops, Teilnahmen und Auszeichnungen beweisen, die von die verschiedenen nationalen und internationalen Wettbewerbe). Er ist ein wahres Beispiel für einen Studenten, der immer bereit ist, anderen zu helfen. Während seiner vierjährigen Tätigkeit als Administrator der Schulwebsite hat Blagoja einen außergewöhnlichen Beitrag zur Steigerung der Effizienz und Qualität unserer täglichen Arbeit geleistet. Bei der Erfüllung dieser Arbeitspflichten geht er verantwortungsbewusst vor und ist immer regelmäßig. Die Einstellung gegenüber Studenten, bemerkenswertes Selbstbewusstsein, Akribie bei der Erfüllung der Aufgaben geben mir das Recht zu betonen, dass ihm die Möglichkeit gegeben werden sollte, seine Fähigkeiten, Fertigkeiten und Kenntnisse persönlich unter Beweis zu stellen.",
-        role: 'Lehrerin bei SOU "Jane Sandanski"',
-        name: "Gordana Vasileva Vukashinovic'",
-        contact: "gordana_vasileva@yahoo.com"
-    },
-    {
-        testimonial: "Es ist mir eine große Freude, dieses Empfehlungsschreiben für Blagoja Dzorlev zu verfassen. In den letzten vier Jahren habe ich Blagoja in einer Reihe von Informatikkursen unterrichtet, in denen er sich hervorgetan hat. Aufgrund meiner Erfahrung mit Blagoja kann ich ohne zu zögern sagen, dass er einer der fleißigsten und naturbegabtesten Studenten im Bereich Programmiersprachen ist. Er ist hervorragend vorbereitet, um auf die Hochschulebene zu wechseln, und für mich ist klar, dass er im Bereich Informatik und Mathematik eine sehr gute Zukunft hat. Blagoja ist für sein Alter sehr reif und geht sehr ernsthaft an seine Aufgaben heran. Er hat ein sehr hohes Maß an Verständnis für kognitive und abstrakte Konzepte und beabsichtigt, sie in neuen Situationen und Projekten anzuwenden. Während der ersten Klasse zeigte er große Kreativität bei der Lösung von Problemen und dem Erfinden einzigartiger Algorithmen in Programmiersprachen, was zu wenigen Preisen bei nationalen und internationalen Wettbewerben führte (als Einzelperson und auch als Teammitglied). Blagoja ist von Natur aus neugierig und sucht nach einer neuen Herausforderung, um sein Talent und seine Fähigkeiten zu verbessern. Neben seinen Programmierkenntnissen zeigte er Interesse an Webdesign, Gamedesign. Vier Jahre lang war Blagoja Redakteur der offiziellen Schulwebsite und nutzte seine Freizeit für die Popularisierung der Schule. Er nahm auch an einigen Erasmus-Projekten teil, war Teil einer Mobilität in Portugal und nahm aktiv an allen Aktivitäten im Ausland teil, sowie während der Mobilität in Strumica als Gastgeber eines Studenten und Organisator des Projekts. Alles in allem ist Blagoja eine unglaublich gut vorbereitete und fähige Schülerin. Abgesehen von Blagojas kognitiven Fähigkeiten ist es wichtig, seine Arbeitsmoral und seine Präsenz im Klassenzimmer zu erwähnen. Blagoja gibt sich nie mit dem Zweitbesten zufrieden und nutzt die Unterrichtszeit produktiv und entschlossen. Aufgrund dieser Herangehensweise wurde Blagoja schnell zu einem Vorbild für seine Mitschüler in allen meinen Klassen. Die Schüler beobachteten Blagojas Engagement für den kreativen Prozess und strebten danach, sich so zu übertreffen wie er. Am wichtigsten ist, dass Blagoja immer bereit ist, seinen Klassenkameraden beim Lösen von Aufgaben zu helfen. Er bietet seinen Kollegen sowohl technische als auch konzeptionelle Unterstützung auf eine freundliche und fürsorgliche Weise, die von Blagojas Geduld und seinem Verständnis für die Bedeutung des kollaborativen Lernens spricht. Als Gymnasiast aus einer kleinen Stadt in Mazedonien hat Blagoja viel mehr erreicht als erwartet. Mit Blick auf Blagojas College-Jahre bin ich sicher, dass er bereit ist, den strengen und herausfordernden Lehrplan Ihres College-Levels anzugehen. Blagoja wird nicht den Weg des geringsten Widerstands gehen, sondern sich selbst dazu zwingen, weiter zu wachsen und sich als innovativer Denker weiterzuentwickeln. Er wird in seine neue Gemeinschaft eintauchen und seine Energie, seinen Enthusiasmus, sein Engagement und sein Talent mit seinen Kollegen und seinen Professoren teilen. Da Blagoja ein außergewöhnlicher Kandidat ist, empfehle ich ihn Ihnen mit größter Zuversicht, da ich seinen großen Wunsch kenne, Teil Ihrer hoch bewerteten Universität zu werden. Bitte zögern Sie nicht, mich zu kontaktieren, wenn Sie weitere Fragen haben.",
-        role: 'Lehrerin bei SOU "Jane Sandanski"',
-        name: "Sofija Tosheva",
-        contact: "sofijatosheva@yahoo.com"
-    },
+    // {
+    //     testimonial: "Als Professor und Mentor von Blagoja habe ich mich besonders gefreut, diese Empfehlung zu schreiben, da wir eine besondere Zusammenarbeit mit ihm haben, was für mich eine neue und wunderbare Erfahrung ist. Ich empfinde ihn als sympathischen, großzügigen, vor allem loyalen und ehrgeizigen jungen Mann, der auch in Zukunft alle unternehmerischen Herausforderungen erfolgreich meistern wird. Blagoja ist ein fähiger, unabhängiger Teenager mit hervorragenden Kommunikationsfähigkeiten, eine angenehme und anpassungsfähige Person, die alltägliche Aufgaben mit unglaublicher Leichtigkeit bewältigt und auf die man sich immer verlassen kann, ein echter Teamplayer (wie seine Debatten, Workshops, Teilnahmen und Auszeichnungen beweisen, die von die verschiedenen nationalen und internationalen Wettbewerbe). Er ist ein wahres Beispiel für einen Studenten, der immer bereit ist, anderen zu helfen. Während seiner vierjährigen Tätigkeit als Administrator der Schulwebsite hat Blagoja einen außergewöhnlichen Beitrag zur Steigerung der Effizienz und Qualität unserer täglichen Arbeit geleistet. Bei der Erfüllung dieser Arbeitspflichten geht er verantwortungsbewusst vor und ist immer regelmäßig. Die Einstellung gegenüber Studenten, bemerkenswertes Selbstbewusstsein, Akribie bei der Erfüllung der Aufgaben geben mir das Recht zu betonen, dass ihm die Möglichkeit gegeben werden sollte, seine Fähigkeiten, Fertigkeiten und Kenntnisse persönlich unter Beweis zu stellen.",
+    //     role: 'Lehrerin bei SOU "Jane Sandanski"',
+    //     name: "Gordana Vasileva Vukashinovic'",
+    //     contact: "gordana_vasileva@yahoo.com"
+    // },
+    // {
+    //     testimonial: "Es ist mir eine große Freude, dieses Empfehlungsschreiben für Blagoja Dzorlev zu verfassen. In den letzten vier Jahren habe ich Blagoja in einer Reihe von Informatikkursen unterrichtet, in denen er sich hervorgetan hat. Aufgrund meiner Erfahrung mit Blagoja kann ich ohne zu zögern sagen, dass er einer der fleißigsten und naturbegabtesten Studenten im Bereich Programmiersprachen ist. Er ist hervorragend vorbereitet, um auf die Hochschulebene zu wechseln, und für mich ist klar, dass er im Bereich Informatik und Mathematik eine sehr gute Zukunft hat. Blagoja ist für sein Alter sehr reif und geht sehr ernsthaft an seine Aufgaben heran. Er hat ein sehr hohes Maß an Verständnis für kognitive und abstrakte Konzepte und beabsichtigt, sie in neuen Situationen und Projekten anzuwenden. Während der ersten Klasse zeigte er große Kreativität bei der Lösung von Problemen und dem Erfinden einzigartiger Algorithmen in Programmiersprachen, was zu wenigen Preisen bei nationalen und internationalen Wettbewerben führte (als Einzelperson und auch als Teammitglied). Blagoja ist von Natur aus neugierig und sucht nach einer neuen Herausforderung, um sein Talent und seine Fähigkeiten zu verbessern. Neben seinen Programmierkenntnissen zeigte er Interesse an Webdesign, Gamedesign. Vier Jahre lang war Blagoja Redakteur der offiziellen Schulwebsite und nutzte seine Freizeit für die Popularisierung der Schule. Er nahm auch an einigen Erasmus-Projekten teil, war Teil einer Mobilität in Portugal und nahm aktiv an allen Aktivitäten im Ausland teil, sowie während der Mobilität in Strumica als Gastgeber eines Studenten und Organisator des Projekts. Alles in allem ist Blagoja eine unglaublich gut vorbereitete und fähige Schülerin. Abgesehen von Blagojas kognitiven Fähigkeiten ist es wichtig, seine Arbeitsmoral und seine Präsenz im Klassenzimmer zu erwähnen. Blagoja gibt sich nie mit dem Zweitbesten zufrieden und nutzt die Unterrichtszeit produktiv und entschlossen. Aufgrund dieser Herangehensweise wurde Blagoja schnell zu einem Vorbild für seine Mitschüler in allen meinen Klassen. Die Schüler beobachteten Blagojas Engagement für den kreativen Prozess und strebten danach, sich so zu übertreffen wie er. Am wichtigsten ist, dass Blagoja immer bereit ist, seinen Klassenkameraden beim Lösen von Aufgaben zu helfen. Er bietet seinen Kollegen sowohl technische als auch konzeptionelle Unterstützung auf eine freundliche und fürsorgliche Weise, die von Blagojas Geduld und seinem Verständnis für die Bedeutung des kollaborativen Lernens spricht. Als Gymnasiast aus einer kleinen Stadt in Mazedonien hat Blagoja viel mehr erreicht als erwartet. Mit Blick auf Blagojas College-Jahre bin ich sicher, dass er bereit ist, den strengen und herausfordernden Lehrplan Ihres College-Levels anzugehen. Blagoja wird nicht den Weg des geringsten Widerstands gehen, sondern sich selbst dazu zwingen, weiter zu wachsen und sich als innovativer Denker weiterzuentwickeln. Er wird in seine neue Gemeinschaft eintauchen und seine Energie, seinen Enthusiasmus, sein Engagement und sein Talent mit seinen Kollegen und seinen Professoren teilen. Da Blagoja ein außergewöhnlicher Kandidat ist, empfehle ich ihn Ihnen mit größter Zuversicht, da ich seinen großen Wunsch kenne, Teil Ihrer hoch bewerteten Universität zu werden. Bitte zögern Sie nicht, mich zu kontaktieren, wenn Sie weitere Fragen haben.",
+    //     role: 'Lehrerin bei SOU "Jane Sandanski"',
+    //     name: "Sofija Tosheva",
+    //     contact: "sofijatosheva@yahoo.com"
+    // },
 ]
 
 let philosophy = {
+    subtext: "meine Philosophie",
     phil: "Philosophie",
     content: "Ich glaube, es gibt keine Aufgabe, die zu schwierig ist, einfach eine Aufgabe, die ich noch nicht vollständig verstehe. Damit möchte ich alles, was ich tue, vollständig verstehen und lernen, damit ich mich in meiner Zukunft auszeichnen kann."
 }
 
 let awards = {
+    subtext: "meine Auszeichnungen und Zertifikate",
     aw: "Auszeichnungen",
     content: "Eine Sammlung von Auszeichnungen von Wettbewerben und Zertifikaten von Projekten, an denen ich teilgenommen habe"
+}
+
+let future = {
+    subtext: "meine Zukunft",
+    headtext: "Zukunft",
+    content: "Innerhalb der nächsten 5 Jahre plane ich, die Universität zu beginnen und zu beenden, einen Bachelor-Abschluss im Bereich Informatik zu machen und bereit, die Software zu entwickeln, die unser tägliches Leben steuert.",
+}
+
+let outside = {
+    subtext: "außerschulische Aktivitäten",
+    headtext: "Außerhalb der Schule",
+    categories: [
+        {
+            title: "Filme und Serien, die mir gefallen",
+            contents: [
+                "Django Unchained",
+                "Breaking Bad",
+                "Inglorious Basterds"
+            ]
+        },
+        {
+            title: "Hobbys",
+            contents: [
+                "Ins Fitnessstudio gehen",
+                "Programmieren",
+                "Mit Freunden ausgehen"
+            ]
+        },
+        {
+            title: "Musik, die mir Spaß macht",
+            contents: [
+                "Logic - Under Pressure",
+                "Eminem - Till I collapse",
+                "Connor Price - Drop"
+            ]
+        }
+    ]
 }
 
 export const gerLang = [

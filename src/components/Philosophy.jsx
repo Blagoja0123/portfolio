@@ -9,6 +9,7 @@ const Philosophy = () => {
   return (
     <>
         <motion.div variants={textVariant()}>
+            <p className={styles.sectionSubText}>{language[11].subtext}</p>
             <h2 className={styles.sectionHeadText}>{language[11].phil}</h2>
             <p className={styles.sectionSubText}>"{language[11].content}"</p>
         </motion.div>

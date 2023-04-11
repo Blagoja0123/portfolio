@@ -185,8 +185,10 @@ let content = {
     exp: "Experience",
     wid: "What I have done so far",
     tech: "Technologies",
+    techsub: "Technology I am familiar with",
     others: "What others say",
-    test: "Recommendations"
+    test: "Recommendations",
+    techcontent: "This is a partial list of technologies I am familiar with, to see more of what I've worked with go to my github profile found in the contact section",
 }
 let contact = {
     git: "get in touch",
@@ -235,13 +237,52 @@ let testimonials = [
 ]
 
 let philosophy = {
+    subtext: "my philosophy",
     phil: "Philosophy",
     content: "I believe there is no task that is too difficult, simply a task that I do not yet fully understand. With this I aim to fully understand everything I do and learn to allow me to excel in my future."
 }
 
 let awards = {
+    subtext: "my awards and certificates",
     aw: "Awards.",
     content: "A collection of awards from competitions and certificates from projects I've participated in"
+}
+
+let future = {
+    subtext: "my future",
+    headtext: "Future",
+    content: "Within the next 5 years I plan to begin and finish university, graduating in the field of computer science with a bachelors degree and ready tocreate the software that runs our day to day lives.",
+}
+
+let outside = {
+    subtext: "extracurricular activities",
+    headtext: "Outside of school",
+    categories: [
+        {
+            title: "Movies and shows I enjoy",
+            contents: [
+                "Django Unchained",
+                "Breaking Bad",
+                "Inglorious Basterds"
+            ]
+        },
+        {
+            title: "Hobbies",
+            contents: [
+                "Going to the gym",
+                "Programming",
+                "Going out with friends"
+            ]
+        },
+        {
+            title: "Music I enjoy",
+            contents: [
+                "Logic - Under Pressure",
+                "Eminem - Till I collapse",
+                "Connor Price - Drop"
+            ]
+        }
+    ]
 }
 
 export const engLang = [
@@ -257,5 +298,7 @@ export const engLang = [
     contact,
     testimonials,
     philosophy,
-    awards
+    awards,
+    future,
+    outside,
 ]

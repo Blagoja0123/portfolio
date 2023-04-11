@@ -40,9 +40,15 @@ const Awards = () =>{
   return (
     <>
         <motion.div variants={textVariant()}>
+            <p className={styles.sectionSubText}>{language[12].subtext}</p>
             <h2 className={styles.sectionHeadText}>{language[12].aw}</h2>
-            <p className={styles.sectionSubText}>{language[12].content}</p>
         </motion.div>
+        <motion.p
+        variants={fadeIn("", "", 0.1, 1)}
+        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        >
+           {language[12].content}
+        </motion.p>
         <motion.div variants={slideIn("left", "spring", 0.1, 1)} className="flex scroll scroll-smooth overflow-y-hidden overflow-x-scroll w-full gap-10">
             {certificates.map((image, index) => (
                 <Image img={image} key={index}/>

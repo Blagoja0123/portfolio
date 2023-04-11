@@ -9,4 +9,7 @@ import Tech from "./Tech";
 import Philosophy from "./Philosophy";
 import Awards from "./Awards";
 import Recommend from "./Recommend";
-export {About, Contact, Experience, Hero, Nav, Loader, Projects, Tech, Philosophy, Awards, Recommend};
+import Outside from "./Outside";
+import Future from "./Future";
+
+export {About, Contact, Experience, Hero, Nav, Loader, Projects, Tech, Philosophy, Awards, Recommend, Outside, Future};

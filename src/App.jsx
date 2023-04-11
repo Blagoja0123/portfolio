@@ -10,7 +10,9 @@ import {
   Contact,
   Philosophy,
   Awards,
-  Recommend
+  Recommend,
+  Outside,
+  Future
 } from "./components";
 
 function App() {
@@ -24,8 +26,10 @@ function App() {
             </div>
             <About/>
             <Philosophy/>
+            <Future/>
             <Experience/>
             <Awards/>
+            <Outside/>
             <Tech/>
             <Projects/>
             <Recommend/>

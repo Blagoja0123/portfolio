@@ -39,10 +39,6 @@ const technologies = [
         icon: cpp,
     },
     {
-        name: "mongo",
-        icon: mongo,
-    },
-    {
         name: "next",
         icon: next,
     },
