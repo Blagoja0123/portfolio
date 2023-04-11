@@ -18,9 +18,7 @@ const Hero = () => {
                 <div>
                   <h1 className={`${styles.heroHeadText} text-white`}>{language[2].intro}<span className=" text-[#37c3ff]">{language[2].name}</span></h1>
                   <p className={`${styles.heroSubText} mt-2 text-white-100 mb-10`}>{language[2].subtext}</p>
-                  <div className="bg-white h-96 w-72 p-3 rotate-2 xs:-z-[2px]">
-                    <img src={img} alt="" className="w-full h-full shadow-black shadow-2xl" />
-                  </div>
+                  
                 </div>
               </div>
               <div className="w-[31rem] h-[31rem]">
