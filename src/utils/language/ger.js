@@ -106,6 +106,7 @@ let experience = [
     {
         title: "Persönliche Projekte & Interessen",
         icon: brain,
+        cvtext: "zum Öffnen anklicken",
         points: [
             "CV",
             "C# API Entwicklung",
@@ -300,5 +301,7 @@ export const gerLang = [
     contact,
     testimonials,
     philosophy,
-    awards
+    awards,
+    future,
+    outside,
 ]

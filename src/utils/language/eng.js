@@ -40,7 +40,7 @@ let about = {
     introduction: "introduction",
     overview: "Overview",
     content: "I am a student and aspiring software engineer with a track record of success in both competitions and professional settings. I have participated in 13 international competitions and won several awards, demonstrating my skills and abilities. In addition to my technical expertise, I have also gained valuable teamwork, leadership, and communication skills through my participation in international projects. I have completed an internship in software engineering and am currently the admin of my school’s website. My knowledge of a wide range of technologies makes me a versatile and capable problem-solver, and I am always eager to take on new challenges and prepare for the future.",
-    content1: "I am a student in SOU “Jane Sandanski” Strumica and for the past 4 years I’ve been on a journey trying my best to gain some experience and knowledge in the field I wish to pursue. 4 years ago my journey started by learning C++ and having a higher interest in subjects that support and go alongside the entire topic of computer science such as maths, programming and English. Since then I have been a part of numerous competitions, projects and an internship, which have all individually played their role in the progression of my overall skills and knowledge. Alongside the language I started my programming journey with I have learned many other programming languages and technologies such as: C#, ASP.NET, Python, Tensorflow, React.js, Next.js, Tailwind, CSS, HTML, JavaScript, TypeScript, THREE.js, tRPC, Prisma, SQL, MongoDB, Node.js, SASS, and a few more. I’ve always had a peaked interest in technology and its exponential improvement over the past few years which inspired me to one day contribute to the massively growing number of technologies available to us."
+    content1: "I am a student in SOU “Jane Sandanski” Strumica and for the past 4 years I’ve been on a journey trying my best to gain some experience and knowledge in the field I wish to pursue. 4 years ago my journey started by learning C++ and having a higher interest in subjects that support and go alongside the entire topic of computer science such as maths, programming and English. Since then I have been a part of numerous competitions, projects and an internship, which have all individually played their role in the progression of my overall skills and knowledge. Alongside the language I started my programming journey with I have learned many other programming languages and technologies such as: C#, ASP.NET, Python, Tensorflow, React.js, Next.js, Tailwind, CSS, HTML, JavaScript, TypeScript, THREE.js, tRPC, Prisma, SQL, MongoDB, Node.js, SASS and a few more. I’ve always had a peaked interest in technology and its exponential improvement over the past few years which inspired me to one day contribute to the massively growing number of technologies available to us."
 }
 let work = {
     my_work: "my work",
@@ -106,6 +106,7 @@ let experience = [
     {
         title: "Personal Projects & Interests",
         icon: brain,
+        cvtext: "click to open",
         points: [
             "CV",
             "C# API development",
@@ -251,7 +252,7 @@ let awards = {
 let future = {
     subtext: "my future",
     headtext: "Future",
-    content: "Within the next 5 years I plan to begin and finish university, graduating in the field of computer science with a bachelors degree and ready tocreate the software that runs our day to day lives.",
+    content: "Within the next 5 years I plan to begin and finish university, graduating in the field of computer science with a bachelors degree and ready to create the software that runs our day to day lives.",
 }
 
 let outside = {
